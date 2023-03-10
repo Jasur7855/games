@@ -12,6 +12,7 @@
     font-size: 48px;
     line-height: 122%;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 .subtitle{
     font-size: 16px;
@@ -144,6 +145,7 @@ header{
     color:#FF9900;
     background-color: transparent;
     padding: 11px 15px;
+    cursor: pointer;
 }
 .company_container-img-text h4{
     font-size: 16px;
@@ -187,9 +189,6 @@ header{
    width: 100%;
    
 }
-.company_container_text_info{
-    
-}
 .company_container_text_img{
     width: 390px;
     height: 165px;
@@ -200,9 +199,110 @@ header{
 }
 
 
+/* weWorking Start */
 
 
+.tab{
+    display: inline-block;
+    margin-right: 85px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 45px;
+}
+.tab:hover{
+    color: #FF9900;
+}
+.weWorkingText{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+.weWorkingTextInfo{
+    width: 50%;
+}
+.weWorkingTextInfo h4{
+    font-size: 24px;
+    line-height: 133%;
+    font-weight: 700;
+    margin-bottom: 8px
+}
+.weWorkingTextInfo p{
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+.weWorkingTexBtn{
+    display: flex;
+    gap: 32px;
+}
+.btnFirst{
+    padding: 20px 38px;
+    background-color: #FF9900;
+    border:1px solid #FF9900;
+    color:#ffffff;
+    font-size: 16px;
 
+}
+.btnSecondary{
+    padding: 20px 38px;
+    font-size: 16px;
+    background-color:transparent;
+    
+}
+.tab.active{
+    color:#FF9900;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: flex;
+}
+.weWorkingTextImg{
+    width: 50%;
+    height: calc(-31.3vw + 910px);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+.tabImg1{
+    background-image:url(../image/weWorking1.jpg);
+}
+.tabImg2{
+    background-image:url(../image/weWorking2.jpg);
+}
+.tabImg3{
+    background-image:url(../image/weWorking3.jpg);
+}
+.tabImg4{
+    background-image:url(../image/weWorking4.jpg);
+}
+.weWorkingTextImg img{
+    width: 100%;
+    height: 100%;
+}
+
+/* weWorking End */
+/* Questions Start */
+.questionAccardion button{
+    font-size: 24px;
+    line-height: 458%;
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+
+}
+
+
+/* Questions End */
 
 
 
@@ -242,6 +342,12 @@ header{
         flex-basis: 100%;
     }
 }
+
+@media (max-width:768px) {
+   
+}
+
+
 @media (max-width:499px){
     .carusel_slider_text button{
         background-color: #FF9900;
@@ -272,5 +378,11 @@ header{
     }
     .company_container-img-text{
         display: none;
+    }
+    .btnFirst{
+        padding: 11px 14px 15px;
+    }
+    .btnSecondary{
+        padding: 11px 30px;
     }
 }
