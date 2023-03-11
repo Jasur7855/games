@@ -208,6 +208,7 @@ header{
     cursor: pointer;
     transition: .3s;
     margin-bottom: 45px;
+    font-size: 18px;
 }
 .tab:hover{
     color: #FF9900;
@@ -300,10 +301,115 @@ header{
     width: 100%;
 
 }
-
-
+.questionAccardionImg{
+    width: 50px;
+    height: 50px;
+    background-color:#ECECEC;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+}
+.questionAccardionI img{
+    color:#666666;
+}
 /* Questions End */
+/* Footer Start */
+.footer{
+    background-color:#222222;
+    padding-bottom:  0;
+}
+.footer-cards{
+    padding: 50px 0;
+    display: flex;
+    
+}
+.footer-card {
+    margin-right: calc(23.2vw - 115px);
+    min-width: 252px;
+}
+.footer-card img{
+    margin-bottom: 33px;
+}
+.footer-card ul{
+    margin-bottom: 90px;
+}
+.footer-card>ul>li{
+    font-size: 18px;
+    line-height: 200%;
+    list-style: none;
+    transition: 1s;
+    
+}
+.footer-card>ul>li>a{
+    color:#CACACA;
+    text-decoration: none;
+    transition: .3s;
+}
+.footer-card>ul>li:hover a{
+    color:#FF9900
+}
+.socialMedia{
+    display: flex;
+    gap: 25px;
+}
+.footer_forms {
+    margin-right: calc(6.3vw + 70px);
+}
+.footer_forms .title{
+    color: #CACACA;
+    margin-bottom: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 450px;
+}
+.footer_forms input{
+    padding-left: 24px;
+    background-color:#414141;
+    font-size: 16px;
+    padding: 14px 24px;
+    outline: none;
+    color:#CACACA;
+}
+.footer_forms textarea{
+    padding-left: 24px;
+    background-color:#414141;
+    font-size: 16px;
+    line-height: 140%;
+    outline: none;
+    color:#CACACA;
+    padding: 14px 24px;
+    resize: none;
+    margin-bottom: 32px;
+}
+.footer_forms_button label {
+    color: #CACACA;
+    font-size: 16px;
+}
+.footer_forms_button button{
+    padding: 19px 30px;
+    color:white;
+    background-color:#FF9900;
+    cursor:pointer;
+    font-size: 16px;
+}
+.footer_forms_button input{
+    
+    
 
+}
+.footer_text p{
+    font-size: 16px;
+    color:#CACACA;
+    line-height: 200%;
+    font-weight: 400;
+    max-width: 362px;
+}
+
+/* Footer End */
 
 
 
@@ -340,6 +446,13 @@ header{
     }
     .company_container-box{
         flex-basis: 100%;
+    }
+    .questionAccardion button{
+        font-size: 20px;
+        
+    }
+    .footer_text{
+        display: none;
     }
 }
 
@@ -384,5 +497,16 @@ header{
     }
     .btnSecondary{
         padding: 11px 30px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .tab{
+        font-size: 14px;
+        margin-right: 44px;
+    }
+    .questionAccardion button{
+        font-size:14px;
+        
     }
 }
