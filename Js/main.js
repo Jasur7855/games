@@ -70,9 +70,6 @@ function circle(n){slider(index= n)}
 
 
 
-
-
-
 // Buttons color
 function main(){
     document.getElementsByClassName("main")[0].style.backgroundColor='#E1670E';

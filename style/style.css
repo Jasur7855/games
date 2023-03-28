@@ -56,7 +56,18 @@ header{
     display: none;
     flex-direction: column;
     width: 30%;
+    animation: anim 3s;
 }
+
+@keyframes anim {
+    from{
+        height: 0;
+    }
+    to{
+        height: 100%;
+    }
+}
+
 .hiddenMenu li{
     list-style: none;
     margin-bottom: 30px;
@@ -397,8 +408,6 @@ header{
 }
 .tab.active{
     color: #E1670E;
-    
-   
 }
 .hidden{
     display: none;
@@ -433,7 +442,7 @@ header{
 
 /* weWorking End */
 /* Questions Start */
-.questionAccardion button{
+.questionBTN{
     font-size: 24px;
     font-weight: 700;
     padding: 39px 0;
@@ -448,8 +457,8 @@ header{
 
 }
 .questionAccardionImg{
-    width: 50px;
-    height: 50px;
+    width: calc(1.76vw + 16px);
+    height: calc(1.76vw + 16px);
     background-color:#ECECEC;
     display: flex;
     justify-content: center;
@@ -586,8 +595,22 @@ label input {
 
 /* Footer End */
 
+.panel {
+    padding: 0 18px;
+    color: #212121;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    width: 60%;
+    font-size: 16px;
+    line-height: 200%;
+} 
 .ac-trigger{
     border: none;
+}
+.showw{
+    display:block;
 }
 
 .menu{
@@ -601,6 +624,9 @@ label input {
 }
 .daa{
     background-color:#E1670E;
+}
+.questionText{
+    display: none;
 }
 @media (max-width:1470px){
     .footer_text{
@@ -640,6 +666,7 @@ label input {
     #tabs{
         width: 70%;
     }
+    .accordion{font-size: 20px;}
 }
 
 @media (max-width:820px) {
@@ -667,6 +694,7 @@ label input {
     #tabs{
         width: 100%;
     }
+   
 }
 
 
@@ -731,7 +759,51 @@ label input {
     .footer_forms form{
         width: 100%;
         min-width: 0;
-    }   
+    } 
+    .accordion{font-size: 14px;} 
+    .panel{
+        width: 100%;
+        font-size: 12px;
+    } 
 }
+
+
+
+.accordion {
+    width: 100%;
+    background-color: #fff ;
+    color: #333;
+    cursor: pointer;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    transition: 0.5s;
+    font-weight: 700;
+}
+
+.panel h4{
+    margin-bottom: 30px;
+}
+
+.questionAccardionImg:after {
+    content: '\002B';
+    color: #fff;
+    width: calc(1.76vw + 16px);
+    height: calc(1.76vw + 16px);
+    background:#ECECEC;
+    font-size: 38px;
+    float: right;
+    border-radius:50%;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
 
 
