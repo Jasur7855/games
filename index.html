@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/addres.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <title>Evclide</title>
 </head>
 <body>
     <header>
@@ -16,27 +18,58 @@
             <img src="./image/Logo.png" alt="">
             <div class="header_box_menu">
                 <ul>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Проекты</a></li>
-                    <li><a href="">Этапы</a></li>
-                    <li><a href="">Отзывы</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li class="nav-link"><a href="">О нас</a></li>
+                    <li class="nav-link"><a href="" >Проекты</a></li>
+                    <li class="nav-link"><a href="">Этапы</a></li>
+                    <li class="nav-link"><a href="">Отзывы</a></li>
+                    <li class="nav-link"><a href="">Контакты</a></li>
                 </ul>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div> 
+                <i class="search fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
+        <ul class="hiddenMenu containerBox">
+            <li class="nav-link"><a href="">О нас</a></li>
+            <li class="nav-link"><a href="" >Проекты</a></li>
+            <li class="nav-link"><a href="">Этапы</a></li>
+            <li class="nav-link"><a href="">Отзывы</a></li>
+            <li class="nav-link"><a href="">Контакты</a></li>
+        </ul>
     </header>
-    
-    <section class="containerBox">
+    <section class="caruselbox containerBox">
         <div class="carusel">
-            <div class="carusel_slider">
+            <div class="headerSearch">
+                <input type="text" placeholder="Что будем искать?">
+                <i class=" search fa-solid fa-magnifying-glass"></i>
+                <div class="headerClose ">x</div>
+            </div>
+            <div class="carusel_slider slider1">
                 <div class="carusel_slider_text">
                     <h2>Проектные решения любой сложности</h2>
                     <p>Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантовh</p>
-                    <button>Заказать расчёт</button>
+                    <button class="main">Заказать расчёт</button>
                 </div>
             </div>
+            <div class="carusel_slider slider2">
+                <div class="carusel_slider_text">
+                    <h2>Проектные решения любой сложности</h2>
+                    <p>Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантовh</p>
+                    <button class="main">Заказать расчёт</button>
+                </div>
+            </div>
+            <div class="carusel_slider slider3">
+                <div class="carusel_slider_text">
+                    <h2>Проектные решения любой сложности</h2>
+                    <p>Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантовh</p>
+                    <button class="main">Заказать расчёт</button>
+                </div>
+            </div>
+            <div class="circleBox">
+                <span class="circle active" onclick="circle(1)"></span>
+                <span class="circle"onclick="circle(2)" ></span>
+                <span class="circle" onclick="circle(3)"></span>
+            </div>
         </div>
+        
     </section>
     <!-- Company Start -->
     <section class="containerBox">
@@ -56,7 +89,7 @@
                 <div class="company_container-img">
                     <div class="company_container-img-text">
                         <h4>Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</h4>
-                        <button>Подробнее</button>
+                        <button class="btn">Подробнее</button>
                     </div>
                 </div>
                 <div class="company_container-img-text-mobile">
@@ -94,17 +127,19 @@
             <h3 class="title">Как мы работаем</h3>
             <div id="weWorkingTabs">
                 
+                  <div id="tabs">
                     <div class="tab active">1 шаг</div>
                     <div class="tab">2 шаг</div>
                     <div class="tab">3 шаг</div>
                     <div class="tab">4 шаг</div>
+                  </div>
 
                 <div class="weWorkingText ">
                     <div class="weWorkingTextInfo ">
                         <h4>Проводим консультацию</h4>
                         <p>Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
                         <div class="weWorkingTexBtn">
-                            <button class="btnFirst">Подробнее</button>
+                            <button class="btnFirst ">Подробнее</button>
                             <button class="btnSecondary">Договор</button>
                         </div>
                     </div>
@@ -151,12 +186,6 @@
                         <!-- <img src="./image/weWorking1.jpg" alt=""> -->
                     </div>
                 </div>
-                
-
-
-
-
-
             </div>
         </div>
     </section>
@@ -167,16 +196,20 @@
             <h3 class="title">Часто задаваемые вопросы</h3>
             <hr>
             <div class="questionAccardion">
-                <button>Из чего формируется конечная стоимость проекта? <div class="questionAccardionImg"><img src="./image/plus.png" alt=""></div></button>
+                <button class="questionBTN">Из чего формируется конечная стоимость проекта? <div class="questionAccardionImg"><img src="./image/plus.png" alt=""></div></button>
                 <hr> 
-                <button>У меня есть свой проект. Сможем ли мы его доработать / реализовать? <div class="questionAccardionImg"><img src="./image/plus.png" alt=""></div></button>
+                <p class="questionText" >Hello</p>
+                <button class="questionBTN ">У меня есть свой проект. Сможем ли мы его доработать / реализовать? <div class="questionAccardionImg"><img src="./image/plus.png" alt=""></div></button>
                 <hr>
-                <button>Я выбираю между разными компаниями. В чём ваше отличие? <div class="questionAccardionImg"><img src="./image/plus.png" alt=""></div></button>
+                <p class="questionTex " >Hello</p>
+                <button class="questionBTN">Я выбираю между разными компаниями. В чём ваше отличие? <div class="questionAccardionImg"><img src="./image/plus.png" alt=""></div></button>
                 <hr>
-                <button>Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? <div class="questionAccardionImg"><img src="./image/plus.png" alt=""></div></button>
+                <p class="questionText "  >Hello</p>
+                <button class="questionBTN">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?<div class="questionAccardionImg"><img src="./image/plus.png" alt=""></div></button>
                 <hr>
-                <button>Могу ли я вернуть деньги на каком-либо из этапов работ? <div class="questionAccardionImg"><img src="./image/plus.png" alt=""></button>
+                <button class="questionBTN">Могу ли я вернуть деньги на каком-либо из этапов работ? <div class="questionAccardionImg"><img src="./image/plus.png" alt=""></button>
                 <hr>
+                <p class="questionText "  >Hello</p>
             </div>
         </div>
     </section>
@@ -186,7 +219,7 @@
             <div class="footer-card">
                 <img src="./image/LogoFooter.png" alt="">
                 <ul>
-                    <li><a href="">О нас</a></li>
+                    <li><a href="index.html" target=".title">О нас</a></li>
                     <li><a href="">Проекты</a></li>
                     <li><a href="">Отзывы</a></li>
                     <li><a href="">Договор оферты</a></li>
@@ -198,6 +231,7 @@
                     <img src="./image/footer1.png" alt="">
                     <img src="./image/footer2.png" alt="">
                     <img src="./image/footer3.png" alt="">
+                    
                 </div>
             </div>
             <div class="footer_forms">
@@ -209,16 +243,30 @@
                 </form>
                 <div class="footer_forms_button">
                     <button>Отправить данные</button>
-                    <label for="">
-                        <input  type="checkbox" name="" id="" >Согласен на обработку данных
+                    <label>
+                        <input class="chekbox" type='checkbox'>
+                        <span></span>
+                        Согласен на обработку данных
                     </label>
                 </div>
+                <div class="socialMedia2">
+                    <img src="./image/footer1.png" alt="">
+                    <img src="./image/footer2.png" alt="">
+                    <img src="./image/footer3.png" alt="">
+                    
+                </div>
+                <img class="logoFooter" src="./image/LogoFooter.png" alt="">
             </div>
             <div class="footer_text">
                 <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. </p>
             </div>
         </div>
     </footer>
+    
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="./Js/main.js"></script>
 </body>
 </html>
+
+
+
